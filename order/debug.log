@@ -1,0 +1,48 @@
+INFO 2022-03-23 11:15:57,027 autoreload 15401 139846857537280 Watching for file changes with StatReloader
+INFO 2022-03-23 11:16:01,656 autoreload 15560 139763664881408 Watching for file changes with StatReloader
+ERROR 2022-03-23 11:21:47,781 exception 15560 139763470300928 Invalid HTTP_HOST header: '192.168.21.101:8001'. You may need to add '192.168.21.101' to ALLOWED_HOSTS.
+WARNING 2022-03-23 11:21:47,825 log 15560 139763470300928 Bad Request: /order/
+WARNING 2022-03-23 11:21:47,826 basehttp 15560 139763470300928 "GET /order/ HTTP/1.1" 400 64147
+INFO 2022-03-23 11:22:20,292 autoreload 30624 139787608741632 Watching for file changes with StatReloader
+WARNING 2022-03-23 11:22:53,639 log 30624 139787419772672 Not Found: /order/
+WARNING 2022-03-23 11:22:53,641 basehttp 30624 139787419772672 "GET /order/ HTTP/1.1" 404 2199
+INFO 2022-03-23 11:24:49,230 autoreload 4147 139633943688960 Watching for file changes with StatReloader
+INFO 2022-03-23 11:24:50,807 basehttp 4147 139633824646912 "GET /order/ HTTP/1.1" 200 25
+WARNING 2022-03-23 11:24:50,982 log 4147 139633824646912 Not Found: /favicon.ico
+WARNING 2022-03-23 11:24:50,983 basehttp 4147 139633824646912 "GET /favicon.ico HTTP/1.1" 404 2220
+INFO 2022-03-23 11:25:48,348 basehttp 4147 139633597077248 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 11:28:05,697 basehttp 4147 139633606256384 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 11:34:36,732 basehttp 4147 139633824646912 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 11:35:33,568 basehttp 4147 139633824646912 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 11:37:57,758 autoreload 914 140423204468480 Watching for file changes with StatReloader
+INFO 2022-03-23 11:38:59,438 basehttp 914 140423016216320 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 11:45:36,273 basehttp 914 140423016216320 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 11:47:05,473 basehttp 914 140423016216320 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 11:51:27,231 autoreload 30919 139904713930496 Watching for file changes with StatReloader
+INFO 2022-03-23 11:51:42,402 basehttp 30919 139904524740352 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 11:53:27,289 basehttp 30919 139904524740352 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 11:54:25,141 basehttp 30919 139904524740352 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 11:55:22,844 basehttp 30919 139904524740352 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 12:03:32,992 basehttp 30919 139904524740352 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 12:15:21,183 autoreload 30919 139904713930496 /data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py changed, reloading.
+INFO 2022-03-23 12:15:21,448 autoreload 18817 140615678621440 Watching for file changes with StatReloader
+INFO 2022-03-23 12:15:35,213 basehttp 18817 140615484438272 "GET /order/ HTTP/1.1" 200 25
+INFO 2022-03-23 12:17:34,225 autoreload 18817 140615678621440 /data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/middleware.py changed, reloading.
+INFO 2022-03-23 12:17:34,510 autoreload 24096 140493499787008 Watching for file changes with StatReloader
+INFO 2022-03-23 12:18:32,309 autoreload 24096 140493499787008 /data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py changed, reloading.
+INFO 2022-03-23 12:18:32,621 autoreload 26302 140609335576320 Watching for file changes with StatReloader
+ERROR 2022-03-23 12:18:46,550 log 26302 140609149011712 Internal Server Error: /order/
+Traceback (most recent call last):
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/middleware.py", line 88, in process_response
+    self._tracing._finish_tracing(request, response=response)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py", line 136, in _finish_tracing
+    scoee.close()
+NameError: name 'scoee' is not defined
+ERROR 2022-03-23 12:18:46,551 basehttp 26302 140609149011712 "GET /order/ HTTP/1.1" 500 62781
+INFO 2022-03-23 12:19:13,289 autoreload 26302 140609335576320 /data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py changed, reloading.
+INFO 2022-03-23 12:19:13,677 autoreload 27887 140444192925440 Watching for file changes with StatReloader
+INFO 2022-03-23 12:19:24,768 basehttp 27887 140444006258432 "GET /order/ HTTP/1.1" 200 25

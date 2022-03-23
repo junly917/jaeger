@@ -1,0 +1,56 @@
+INFO 2022-03-23 11:13:07,423 autoreload 9498 140612380972800 Watching for file changes with StatReloader
+INFO 2022-03-23 11:16:51,196 autoreload 17493 139830575617792 Watching for file changes with StatReloader
+WARNING 2022-03-23 11:21:44,771 log 17493 139830456313600 Not Found: /goods/
+WARNING 2022-03-23 11:21:44,772 basehttp 17493 139830456313600 "GET /goods/ HTTP/1.1" 404 2199
+WARNING 2022-03-23 11:22:50,596 log 17493 139830456313600 Not Found: /goods/
+WARNING 2022-03-23 11:22:50,597 basehttp 17493 139830456313600 "GET /goods/ HTTP/1.1" 404 2199
+WARNING 2022-03-23 11:23:08,423 log 17493 139830456313600 Not Found: /goods
+WARNING 2022-03-23 11:23:08,424 basehttp 17493 139830456313600 "GET /goods HTTP/1.1" 404 2196
+WARNING 2022-03-23 11:23:08,526 log 17493 139830456313600 Not Found: /favicon.ico
+WARNING 2022-03-23 11:23:08,527 basehttp 17493 139830456313600 "GET /favicon.ico HTTP/1.1" 404 2214
+WARNING 2022-03-23 11:23:10,281 log 17493 139830456313600 Not Found: /goods/
+WARNING 2022-03-23 11:23:10,282 basehttp 17493 139830456313600 "GET /goods/ HTTP/1.1" 404 2199
+INFO 2022-03-23 11:23:40,398 autoreload 1500 139785545062144 Watching for file changes with StatReloader
+WARNING 2022-03-23 11:23:42,925 log 1500 139785425757952 Not Found: /goods/
+WARNING 2022-03-23 11:23:42,925 basehttp 1500 139785425757952 "GET /goods/ HTTP/1.1" 404 2199
+INFO 2022-03-23 11:23:43,440 basehttp 1500 139785425757952 "GET / HTTP/1.1" 200 11
+INFO 2022-03-23 11:24:05,242 autoreload 2564 140135006041856 Watching for file changes with StatReloader
+WARNING 2022-03-23 11:24:40,365 log 2564 140134886737664 Not Found: /order/
+WARNING 2022-03-23 11:24:40,365 basehttp 2564 140134886737664 "GET /order/ HTTP/1.1" 404 2205
+INFO 2022-03-23 11:25:44,033 basehttp 2564 140134878344960 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 11:28:01,385 basehttp 2564 140134878344960 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 11:34:32,419 basehttp 2564 140134886737664 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 11:35:29,254 basehttp 2564 140134886737664 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 11:37:55,985 autoreload 711 140677791028992 Watching for file changes with StatReloader
+INFO 2022-03-23 11:38:55,119 basehttp 711 140677604509440 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 11:44:57,337 basehttp 711 140677604509440 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 11:45:31,958 basehttp 711 140677604509440 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 11:47:01,160 basehttp 711 140677604509440 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 11:51:07,566 basehttp 711 140677604509440 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 11:51:38,075 basehttp 711 140677604509440 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 11:53:22,976 basehttp 711 140677604509440 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 11:54:20,827 basehttp 711 140677604509440 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 11:55:18,533 basehttp 711 140677604509440 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 12:03:28,683 basehttp 711 140677604509440 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 12:15:20,710 autoreload 711 140677791028992 /data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py changed, reloading.
+INFO 2022-03-23 12:15:21,083 autoreload 18769 140359899080448 Watching for file changes with StatReloader
+INFO 2022-03-23 12:15:30,897 basehttp 18769 140359712442112 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-03-23 12:17:33,831 autoreload 18769 140359899080448 /data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/_version.py changed, reloading.
+INFO 2022-03-23 12:17:34,099 autoreload 24060 140328554845952 Watching for file changes with StatReloader
+INFO 2022-03-23 12:18:32,877 autoreload 24060 140328554845952 /data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py changed, reloading.
+INFO 2022-03-23 12:18:33,232 autoreload 26406 140711905015552 Watching for file changes with StatReloader
+ERROR 2022-03-23 12:18:42,178 log 26406 140711718549248 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/middleware.py", line 88, in process_response
+    self._tracing._finish_tracing(request, response=response)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py", line 136, in _finish_tracing
+    scoee.close()
+NameError: name 'scoee' is not defined
+ERROR 2022-03-23 12:18:42,179 basehttp 26406 140711718549248 "GET /goods/ HTTP/1.1" 500 62767
+INFO 2022-03-23 12:19:12,895 autoreload 26406 140711905015552 /data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py changed, reloading.
+INFO 2022-03-23 12:19:13,204 autoreload 27843 140682116867840 Watching for file changes with StatReloader
+INFO 2022-03-23 12:19:20,448 basehttp 27843 140681922213632 "GET /goods/ HTTP/1.1" 200 11

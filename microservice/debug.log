@@ -1,0 +1,158 @@
+INFO 2022-03-23 11:20:28,012 autoreload 26143 140712281687808 Watching for file changes with StatReloader
+INFO 2022-03-23 11:20:49,330 autoreload 26943 139929442121472 Watching for file changes with StatReloader
+WARNING 2022-03-23 11:21:35,101 log 26943 139929318835968 Not Found: /
+WARNING 2022-03-23 11:21:35,102 basehttp 26943 139929318835968 "GET / HTTP/1.1" 404 2177
+WARNING 2022-03-23 11:21:35,268 log 26943 139929318835968 Not Found: /favicon.ico
+WARNING 2022-03-23 11:21:35,268 basehttp 26943 139929318835968 "GET /favicon.ico HTTP/1.1" 404 2228
+INFO 2022-03-23 11:21:47,827 basehttp 26943 139929318835968 "GET /totals/ HTTP/1.1" 200 66388
+INFO 2022-03-23 11:22:53,645 basehttp 26943 139929318835968 "GET /totals/ HTTP/1.1" 200 4429
+INFO 2022-03-23 11:25:48,348 basehttp 26943 139929318835968 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 11:26:31,598 autoreload 7873 140105003570944 Watching for file changes with StatReloader
+INFO 2022-03-23 11:27:52,189 autoreload 10683 140157031696128 Watching for file changes with StatReloader
+INFO 2022-03-23 11:28:05,700 basehttp 10683 140156841252608 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 11:28:46,026 autoreload 12429 140402024318720 Watching for file changes with StatReloader
+INFO 2022-03-23 11:34:24,233 autoreload 25186 140351946557184 Watching for file changes with StatReloader
+INFO 2022-03-23 11:34:36,734 basehttp 25186 140351823271680 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 11:35:16,529 autoreload 27007 139811108022016 Watching for file changes with StatReloader
+INFO 2022-03-23 11:35:33,573 basehttp 27007 139810916267776 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 11:37:53,159 autoreload 487 140523120592640 Watching for file changes with StatReloader
+INFO 2022-03-23 11:38:36,684 autoreload 2963 140668381923072 Watching for file changes with StatReloader
+INFO 2022-03-23 11:38:44,946 autoreload 3261 140668482021120 Watching for file changes with StatReloader
+INFO 2022-03-23 11:38:59,442 basehttp 3261 140668290721536 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 11:44:51,421 autoreload 15937 139833320765184 Watching for file changes with StatReloader
+ERROR 2022-03-23 11:45:00,398 log 15937 139833129301760 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "/data/jaeger/microservice/microservice/views.py", line 19, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "/data/jaeger/microservice/microservice/views.py", line 29, in call_order
+    tracer = opentracing.global_tracer()
+NameError: name 'opentracing' is not defined
+ERROR 2022-03-23 11:45:00,399 basehttp 15937 139833129301760 "GET /totals/ HTTP/1.1" 500 75070
+INFO 2022-03-23 11:45:26,659 autoreload 17242 139767063746304 Watching for file changes with StatReloader
+INFO 2022-03-23 11:45:36,277 basehttp 17242 139766864922368 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 11:46:22,080 autoreload 19545 139957201348352 Watching for file changes with StatReloader
+INFO 2022-03-23 11:47:05,477 basehttp 19545 139957002561280 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 11:51:01,363 autoreload 29895 139839401441024 Watching for file changes with StatReloader
+ERROR 2022-03-23 11:51:10,676 log 29895 139839210800896 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.7/http/client.py", line 1277, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1323, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1272, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1032, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.7/http/client.py", line 972, in send
+    self.connect()
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f2ed97a37d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/requests/adapters.py", line 450, in send
+    timeout=timeout
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/urllib3/connectionpool.py", line 786, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.21.101', port=8001): Max retries exceeded with url: /order/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2ed97a37d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "/data/jaeger/microservice/microservice/views.py", line 23, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "/data/jaeger/microservice/microservice/views.py", line 36, in call_order
+    res = requests.get(order_url, headers=headers, timeout=3.0)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.21.101', port=8001): Max retries exceeded with url: /order/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2ed97a37d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+ERROR 2022-03-23 11:51:10,714 basehttp 29895 139839210800896 "GET /totals/ HTTP/1.1" 500 191006
+INFO 2022-03-23 11:51:42,405 basehttp 29895 139839210800896 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 11:53:27,292 basehttp 29895 139839210800896 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 11:54:25,142 basehttp 29895 139839210800896 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 11:55:00,969 autoreload 29895 139839401441024 /data/jaeger/microservice/microservice/views.py changed, reloading.
+INFO 2022-03-23 11:55:01,284 autoreload 6802 139698373232384 Watching for file changes with StatReloader
+INFO 2022-03-23 11:55:05,662 autoreload 7004 140620615808768 Watching for file changes with StatReloader
+INFO 2022-03-23 11:55:22,848 basehttp 7004 140620425348864 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 12:01:32,128 autoreload 7004 140620615808768 /data/jaeger/microservice/microservice/settings.py changed, reloading.
+INFO 2022-03-23 12:01:32,450 autoreload 20820 140611511400192 Watching for file changes with StatReloader
+INFO 2022-03-23 12:01:53,874 autoreload 20820 140611511400192 /data/jaeger/microservice/microservice/settings.py changed, reloading.
+INFO 2022-03-23 12:01:54,172 autoreload 21540 140487704721152 Watching for file changes with StatReloader
+INFO 2022-03-23 12:03:00,182 autoreload 21540 140487704721152 /data/jaeger/microservice/microservice/views.py changed, reloading.
+INFO 2022-03-23 12:03:00,486 autoreload 24203 140394942007040 Watching for file changes with StatReloader
+INFO 2022-03-23 12:03:13,191 autoreload 24816 140491627620096 Watching for file changes with StatReloader
+INFO 2022-03-23 12:03:32,996 basehttp 24816 140491437131520 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 12:05:32,467 autoreload 29722 140158698268416 Watching for file changes with StatReloader
+INFO 2022-03-23 12:13:15,071 autoreload 14013 139840471496448 Watching for file changes with StatReloader
+INFO 2022-03-23 12:15:20,786 autoreload 14013 139840471496448 /data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py changed, reloading.
+INFO 2022-03-23 12:15:21,155 autoreload 18770 140523995076352 Watching for file changes with StatReloader
+INFO 2022-03-23 12:15:24,485 autoreload 19003 139819734603520 Watching for file changes with StatReloader
+INFO 2022-03-23 12:15:35,215 basehttp 19003 139819543971584 "GET /totals/ HTTP/1.1" 200 55
+INFO 2022-03-23 12:17:33,455 autoreload 19003 139819734603520 /data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/middleware.py changed, reloading.
+INFO 2022-03-23 12:17:33,767 autoreload 24037 140209720846080 Watching for file changes with StatReloader
+INFO 2022-03-23 12:18:32,719 autoreload 24037 140209720846080 /data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py changed, reloading.
+INFO 2022-03-23 12:18:33,060 autoreload 26384 139875911976704 Watching for file changes with StatReloader
+INFO 2022-03-23 12:18:36,417 autoreload 26597 139702914279168 Watching for file changes with StatReloader
+ERROR 2022-03-23 12:18:46,574 log 26597 139702723880704 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/middleware.py", line 88, in process_response
+    self._tracing._finish_tracing(request, response=response)
+  File "/data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py", line 136, in _finish_tracing
+    scoee.close()
+NameError: name 'scoee' is not defined
+ERROR 2022-03-23 12:18:46,574 basehttp 26597 139702723880704 "GET /totals/ HTTP/1.1" 500 64683
+INFO 2022-03-23 12:19:13,306 autoreload 26597 139702914279168 /data/jaeger/venv-microsvc/lib/python3.7/site-packages/django_opentracing/tracing.py changed, reloading.
+INFO 2022-03-23 12:19:13,707 autoreload 27890 140201252202240 Watching for file changes with StatReloader
+INFO 2022-03-23 12:19:15,845 autoreload 28014 140348434511616 Watching for file changes with StatReloader
+INFO 2022-03-23 12:19:24,771 basehttp 28014 140348244043520 "GET /totals/ HTTP/1.1" 200 55
