@@ -26,7 +26,7 @@ def total(request):
 #@tracing.trace()
 #@tracing.trace(view=False)
 def call_order(Hostname):
-    order_url = "http://{}:8080/order/".format(Hostname)
+    order_url = "http://ORDER_SERVICE_HOST:ORDER_SERVICE_PORT/order/"
     print("call_order")
     time.sleep(3)
     tracer = opentracing.global_tracer()
@@ -40,7 +40,7 @@ def call_order(Hostname):
 #@tracing.trace()
 #@tracing.trace(view=False)
 def call_goods(Hostname):
-    order_url = "http://{}:8000/goods/".format(Hostname)
+    order_url = "http://GOODS_SERVICE_HOST:GOODS_SERVICE_PORT/goods/"
     headers = {}
     print("call_goods")
     time.sleep(2)
