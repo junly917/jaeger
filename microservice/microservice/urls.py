@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from microservice import views as microsvc_views
+from . import views as microsvc_views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('totals/', microsvc_views.total),
+    path('trace/', microsvc_views.trace_id),
 ]

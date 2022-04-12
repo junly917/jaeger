@@ -177,7 +177,7 @@ config = Config(
         },
         'logging': True,
     },
-    service_name='microserver-tracer',
+    service_name='microserver-project-tracer',
     validate=True,
 )
 # this call also sets opentracing.tracer

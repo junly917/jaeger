@@ -174,7 +174,7 @@ config = Config(
         },
         'logging': True,
     },
-    service_name='tracer-order',
+    service_name='order-project',
     validate=True,
 )
 # this call also sets opentracing.tracer

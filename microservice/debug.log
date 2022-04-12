@@ -1,1 +1,616 @@
 
+INFO 2022-04-12 17:30:26,024 autoreload 18420 17424 Watching for file changes with StatReloader
+INFO 2022-04-12 17:30:50,362 autoreload 17068 18024 Watching for file changes with StatReloader
+INFO 2022-04-12 17:31:38,945 autoreload 4120 14768 Watching for file changes with StatReloader
+ERROR 2022-04-12 17:31:45,201 log 4120 2676 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 382, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\url.py", line 199, in parse_url
+    raise LocationParseError(url)
+urllib3.exceptions.LocationParseError: Failed to parse: None:None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 25, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 54, in call_goods
+    res = requests.get(order_url, headers=headers, timeout=3.0)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 466, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 384, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: None:None
+ERROR 2022-04-12 17:31:45,208 basehttp 4120 2676 "GET /totals/ HTTP/1.1" 500 117493
+WARNING 2022-04-12 17:31:45,310 log 4120 2676 Not Found: /favicon.ico
+WARNING 2022-04-12 17:31:45,311 basehttp 4120 2676 "GET /favicon.ico HTTP/1.1" 404 2223
+WARNING 2022-04-12 17:31:48,883 log 4120 2676 Not Found: /
+WARNING 2022-04-12 17:31:48,884 basehttp 4120 2676 "GET / HTTP/1.1" 404 2172
+INFO 2022-04-12 17:31:53,025 basehttp 4120 2676 "GET /totals HTTP/1.1" 301 0
+ERROR 2022-04-12 17:31:55,080 log 4120 2676 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 382, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\url.py", line 199, in parse_url
+    raise LocationParseError(url)
+urllib3.exceptions.LocationParseError: Failed to parse: None:None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 25, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 54, in call_goods
+    res = requests.get(order_url, headers=headers, timeout=3.0)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 466, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 384, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: None:None
+ERROR 2022-04-12 17:31:55,086 basehttp 4120 2676 "GET /totals/ HTTP/1.1" 500 117493
+INFO 2022-04-12 17:32:26,160 autoreload 4120 14768 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:32:26,946 autoreload 14668 6548 Watching for file changes with StatReloader
+INFO 2022-04-12 17:32:29,461 autoreload 14668 6548 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:32:30,372 autoreload 20236 12236 Watching for file changes with StatReloader
+INFO 2022-04-12 17:32:38,645 autoreload 21124 17576 Watching for file changes with StatReloader
+INFO 2022-04-12 17:32:48,440 autoreload 21124 17576 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:32:49,224 autoreload 19348 14324 Watching for file changes with StatReloader
+INFO 2022-04-12 17:33:00,139 autoreload 19348 14324 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:33:01,414 autoreload 20140 8428 Watching for file changes with StatReloader
+ERROR 2022-04-12 17:33:03,708 log 20140 21136 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 382, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\url.py", line 199, in parse_url
+    raise LocationParseError(url)
+urllib3.exceptions.LocationParseError: Failed to parse: None:None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 25, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 54, in call_goods
+    res = requests.get(order_url, headers=headers, timeout=3.0)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 466, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 384, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: None:None
+ERROR 2022-04-12 17:33:03,716 basehttp 20140 21136 "GET /totals/ HTTP/1.1" 500 117633
+INFO 2022-04-12 17:33:55,752 autoreload 20140 8428 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:33:56,548 autoreload 20624 20204 Watching for file changes with StatReloader
+ERROR 2022-04-12 17:34:18,497 log 20624 20580 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 382, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\url.py", line 199, in parse_url
+    raise LocationParseError(url)
+urllib3.exceptions.LocationParseError: Failed to parse: None:None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 25, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 53, in call_goods
+    res = requests.get(order_url, headers=headers, timeout=3.0)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 466, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 384, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: None:None
+ERROR 2022-04-12 17:34:18,504 basehttp 20624 20580 "GET /totals/ HTTP/1.1" 500 117633
+INFO 2022-04-12 17:37:07,811 autoreload 20624 20204 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:37:08,608 autoreload 20512 18356 Watching for file changes with StatReloader
+ERROR 2022-04-12 17:37:14,572 log 20512 21060 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 382, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\url.py", line 199, in parse_url
+    raise LocationParseError(url)
+urllib3.exceptions.LocationParseError: Failed to parse: None:None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 25, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 39, in call_order
+    res = requests.get(order_url, headers=headers, timeout=3.0)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 466, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 384, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: None:None
+ERROR 2022-04-12 17:37:14,579 basehttp 20512 21060 "GET /totals/ HTTP/1.1" 500 118234
+INFO 2022-04-12 17:37:35,098 autoreload 18228 19332 Watching for file changes with StatReloader
+ERROR 2022-04-12 17:37:39,182 log 18228 11360 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 382, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\url.py", line 199, in parse_url
+    raise LocationParseError(url)
+urllib3.exceptions.LocationParseError: Failed to parse: None:None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 25, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 39, in call_order
+    res = requests.get(order_url, headers=headers, timeout=3.0)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 466, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 384, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: None:None
+ERROR 2022-04-12 17:37:39,189 basehttp 18228 11360 "GET /totals/ HTTP/1.1" 500 118234
+INFO 2022-04-12 17:38:23,226 autoreload 18228 19332 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:38:24,070 autoreload 20600 18420 Watching for file changes with StatReloader
+INFO 2022-04-12 17:38:29,821 basehttp 20600 20712 "GET /totals/ HTTP/1.1" 200 62709
+INFO 2022-04-12 17:38:35,112 basehttp 20600 20712 "GET /totals/ HTTP/1.1" 200 62709
+WARNING 2022-04-12 17:38:50,618 log 20600 20712 Not Found: /
+WARNING 2022-04-12 17:38:50,619 basehttp 20600 20712 "GET / HTTP/1.1" 404 2172
+INFO 2022-04-12 17:38:57,721 basehttp 20600 20712 "GET /totals/ HTTP/1.1" 200 62709
+INFO 2022-04-12 17:39:20,636 autoreload 20600 18420 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:39:21,438 autoreload 19896 15644 Watching for file changes with StatReloader
+INFO 2022-04-12 17:39:24,974 autoreload 19896 15644 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:39:26,022 autoreload 14436 14620 Watching for file changes with StatReloader
+INFO 2022-04-12 17:39:28,475 basehttp 14436 1600 "GET /totals/ HTTP/1.1" 200 62708
+INFO 2022-04-12 17:39:46,200 basehttp 14436 1600 "GET /totals/ HTTP/1.1" 200 62709
+INFO 2022-04-12 17:40:01,236 autoreload 14436 14620 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:40:02,044 autoreload 20924 8452 Watching for file changes with StatReloader
+INFO 2022-04-12 17:40:03,565 autoreload 20924 8452 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:40:04,381 autoreload 19772 19492 Watching for file changes with StatReloader
+INFO 2022-04-12 17:40:16,693 basehttp 19772 13776 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 17:42:12,432 autoreload 19772 19492 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:42:13,590 autoreload 19108 16000 Watching for file changes with StatReloader
+INFO 2022-04-12 17:44:13,856 basehttp 19108 21348 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 17:44:37,217 autoreload 19108 16000 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:44:37,999 autoreload 16072 15120 Watching for file changes with StatReloader
+ERROR 2022-04-12 17:44:43,738 log 16072 21408 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 25, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 31, in call_order
+    with tracer.start_span('call_order', child_of=get_current_span()) as span:
+UnboundLocalError: local variable 'tracer' referenced before assignment
+ERROR 2022-04-12 17:44:43,744 basehttp 16072 21408 "GET /totals/ HTTP/1.1" 500 79304
+INFO 2022-04-12 17:44:53,762 autoreload 16072 15120 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:44:54,532 autoreload 6252 16852 Watching for file changes with StatReloader
+ERROR 2022-04-12 17:45:03,151 log 6252 13220 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 25, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 31, in call_order
+    with tracing.start_span('call_order', child_of=get_current_span()) as span:
+AttributeError: 'DjangoTracing' object has no attribute 'start_span'
+ERROR 2022-04-12 17:45:03,154 basehttp 6252 13220 "GET /totals/ HTTP/1.1" 500 79329
+INFO 2022-04-12 17:47:07,553 autoreload 6252 16852 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:47:08,377 autoreload 15916 18356 Watching for file changes with StatReloader
+INFO 2022-04-12 17:47:17,894 basehttp 15916 15348 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 17:47:59,658 autoreload 15916 18356 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:48:00,530 autoreload 15368 5764 Watching for file changes with StatReloader
+INFO 2022-04-12 17:48:09,425 basehttp 15368 20396 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 17:48:38,459 autoreload 15368 5764 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:48:39,394 autoreload 17072 15336 Watching for file changes with StatReloader
+INFO 2022-04-12 17:48:48,390 autoreload 17072 15336 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:48:49,180 autoreload 7836 19836 Watching for file changes with StatReloader
+INFO 2022-04-12 17:48:50,679 autoreload 7836 19836 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:48:51,494 autoreload 19824 20516 Watching for file changes with StatReloader
+INFO 2022-04-12 17:48:56,691 basehttp 19824 19328 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 17:49:43,730 autoreload 19824 20516 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:49:44,513 autoreload 19464 13292 Watching for file changes with StatReloader
+INFO 2022-04-12 17:49:49,128 autoreload 19464 13292 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:49:49,954 autoreload 8040 6848 Watching for file changes with StatReloader
+INFO 2022-04-12 17:50:23,118 basehttp 8040 18376 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 17:50:43,026 basehttp 8040 18376 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 17:51:49,477 autoreload 8040 6848 D:\Work\Code\microservice\microservice\microservice\settings.py changed, reloading.
+INFO 2022-04-12 17:51:50,338 autoreload 19464 13328 Watching for file changes with StatReloader
+INFO 2022-04-12 17:53:46,158 basehttp 19464 14108 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 17:54:07,665 autoreload 17672 14828 Watching for file changes with StatReloader
+INFO 2022-04-12 17:55:04,297 basehttp 17672 20600 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 17:58:11,620 autoreload 17672 14828 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:58:12,396 autoreload 19368 2600 Watching for file changes with StatReloader
+INFO 2022-04-12 17:58:14,913 autoreload 19368 2600 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:58:15,684 autoreload 20204 19284 Watching for file changes with StatReloader
+INFO 2022-04-12 17:58:37,145 autoreload 20204 19284 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:58:37,917 autoreload 20412 11532 Watching for file changes with StatReloader
+INFO 2022-04-12 17:58:45,741 autoreload 20412 11532 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:58:46,519 autoreload 19120 20376 Watching for file changes with StatReloader
+INFO 2022-04-12 17:58:49,020 autoreload 19120 20376 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 17:58:49,923 autoreload 20204 17860 Watching for file changes with StatReloader
+ERROR 2022-04-12 18:03:39,991 log 20204 21212 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 382, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\url.py", line 199, in parse_url
+    raise LocationParseError(url)
+urllib3.exceptions.LocationParseError: Failed to parse: None:None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 24, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 50, in call_goods
+    res = requests.get(order_url, headers=headers, timeout=3.0)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 466, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 384, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: None:None
+ERROR 2022-04-12 18:03:39,998 basehttp 20204 21212 "GET /totals/ HTTP/1.1" 500 118222
+ERROR 2022-04-12 18:04:15,912 log 20204 21212 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 382, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\url.py", line 199, in parse_url
+    raise LocationParseError(url)
+urllib3.exceptions.LocationParseError: Failed to parse: None:None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 24, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 50, in call_goods
+    res = requests.get(order_url, headers=headers, timeout=3.0)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 466, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 384, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: None:None
+ERROR 2022-04-12 18:04:15,918 basehttp 20204 21212 "GET /totals/ HTTP/1.1" 500 118365
+INFO 2022-04-12 18:04:36,218 autoreload 1612 17128 Watching for file changes with StatReloader
+ERROR 2022-04-12 18:06:08,397 log 1612 19684 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 382, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\url.py", line 199, in parse_url
+    raise LocationParseError(url)
+urllib3.exceptions.LocationParseError: Failed to parse: None:None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 24, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 50, in call_goods
+    res = requests.get(order_url, headers=headers, timeout=3.0)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 466, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 384, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: None:None
+ERROR 2022-04-12 18:06:08,403 basehttp 1612 19684 "GET /totals/ HTTP/1.1" 500 118347
+INFO 2022-04-12 18:06:29,955 autoreload 1612 17128 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:06:30,771 autoreload 15896 20060 Watching for file changes with StatReloader
+INFO 2022-04-12 18:06:33,310 autoreload 15896 20060 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:06:34,081 autoreload 16548 7776 Watching for file changes with StatReloader
+INFO 2022-04-12 18:06:35,565 autoreload 16548 7776 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:06:36,437 autoreload 14840 7604 Watching for file changes with StatReloader
+ERROR 2022-04-12 18:06:39,135 log 14840 21052 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 382, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\url.py", line 199, in parse_url
+    raise LocationParseError(url)
+urllib3.exceptions.LocationParseError: Failed to parse: None:None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 24, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 50, in call_goods
+    res = requests.get(order_url, headers=headers, timeout=3.0)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 466, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 384, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: None:None
+ERROR 2022-04-12 18:06:39,142 basehttp 14840 21052 "GET /totals/ HTTP/1.1" 500 117445
+ERROR 2022-04-12 18:07:30,321 log 14840 21052 Internal Server Error: /totals/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 382, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "D:\Program Files\Python37\lib\site-packages\urllib3\util\url.py", line 199, in parse_url
+    raise LocationParseError(url)
+urllib3.exceptions.LocationParseError: Failed to parse: None:None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\django_opentracing\tracing.py", line 59, in wrapper
+    return view_func(request)
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 24, in total
+    return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
+  File "D:\Work\Code\microservice\microservice\microservice\views.py", line 50, in call_goods
+    res = requests.get(order_url, headers=headers, timeout=3.0)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "D:\Program Files\Python37\lib\site-packages\requests\sessions.py", line 466, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "D:\Program Files\Python37\lib\site-packages\requests\models.py", line 384, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: None:None
+ERROR 2022-04-12 18:07:30,342 basehttp 14840 21052 "GET /totals/ HTTP/1.1" 500 117445
+INFO 2022-04-12 18:08:02,394 autoreload 14840 7604 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:08:03,193 autoreload 4740 20188 Watching for file changes with StatReloader
+INFO 2022-04-12 18:08:23,571 autoreload 4740 20188 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:08:24,383 autoreload 20500 9784 Watching for file changes with StatReloader
+INFO 2022-04-12 18:08:30,087 autoreload 20500 9784 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:08:30,907 autoreload 20060 19844 Watching for file changes with StatReloader
+INFO 2022-04-12 18:08:37,456 autoreload 20060 19844 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:08:38,254 autoreload 15448 21392 Watching for file changes with StatReloader
+INFO 2022-04-12 18:08:48,480 basehttp 15448 19412 "GET /totals/ HTTP/1.1" 200 2235
+INFO 2022-04-12 18:09:11,810 autoreload 15448 21392 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:09:12,627 autoreload 7280 18356 Watching for file changes with StatReloader
+INFO 2022-04-12 18:09:19,336 autoreload 7280 18356 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:09:20,113 autoreload 18740 10044 Watching for file changes with StatReloader
+INFO 2022-04-12 18:09:34,705 basehttp 18740 996 "GET /totals/ HTTP/1.1" 200 2235
+INFO 2022-04-12 18:09:40,838 autoreload 18740 10044 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:09:41,751 autoreload 8012 21388 Watching for file changes with StatReloader
+INFO 2022-04-12 18:09:44,953 basehttp 8012 16872 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:09:54,299 basehttp 8012 16872 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:11:17,967 autoreload 8012 21388 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:11:19,050 autoreload 21456 19768 Watching for file changes with StatReloader
+INFO 2022-04-12 18:11:29,263 basehttp 21456 14624 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:13:59,134 basehttp 21456 14624 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:16:05,537 basehttp 21456 14624 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:16:24,155 basehttp 21456 14624 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:20:24,849 basehttp 21456 14624 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:30:24,759 autoreload 21456 19768 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:30:25,580 autoreload 15740 20056 Watching for file changes with StatReloader
+INFO 2022-04-12 18:30:30,649 autoreload 15740 20056 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:30:31,511 autoreload 19608 19024 Watching for file changes with StatReloader
+INFO 2022-04-12 18:30:39,497 autoreload 19608 19024 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:30:40,359 autoreload 18120 20832 Watching for file changes with StatReloader
+INFO 2022-04-12 18:30:47,345 autoreload 18120 20832 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:30:48,186 autoreload 8040 20036 Watching for file changes with StatReloader
+INFO 2022-04-12 18:30:49,816 autoreload 8040 20036 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:30:50,632 autoreload 19420 9516 Watching for file changes with StatReloader
+INFO 2022-04-12 18:31:08,262 autoreload 19420 9516 D:\Work\Code\microservice\microservice\microservice\urls.py changed, reloading.
+INFO 2022-04-12 18:31:09,038 autoreload 14560 13660 Watching for file changes with StatReloader
+INFO 2022-04-12 18:31:14,829 autoreload 14560 13660 D:\Work\Code\microservice\microservice\microservice\urls.py changed, reloading.
+INFO 2022-04-12 18:31:15,649 autoreload 12848 5140 Watching for file changes with StatReloader
+INFO 2022-04-12 18:31:19,369 autoreload 12848 5140 D:\Work\Code\microservice\microservice\microservice\urls.py changed, reloading.
+INFO 2022-04-12 18:31:20,223 autoreload 15324 20580 Watching for file changes with StatReloader
+INFO 2022-04-12 18:31:21,890 autoreload 15324 20580 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:31:22,781 autoreload 20832 11996 Watching for file changes with StatReloader
+WARNING 2022-04-12 18:31:25,440 log 20832 15472 Not Found: /trace_id/
+WARNING 2022-04-12 18:31:25,442 basehttp 20832 15472 "GET /trace_id/ HTTP/1.1" 404 2323
+INFO 2022-04-12 18:31:25,637 basehttp 20832 4772 - Broken pipe from ('127.0.0.1', 12412)
+
+ERROR 2022-04-12 18:31:28,692 log 20832 15472 Internal Server Error: /trace/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "D:\Program Files\Python37\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+ERROR 2022-04-12 18:31:28,695 basehttp 20832 15472 "GET /trace/ HTTP/1.1" 500 69794
+INFO 2022-04-12 18:32:19,775 autoreload 20832 11996 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:32:20,625 autoreload 15608 17128 Watching for file changes with StatReloader
+ERROR 2022-04-12 18:32:23,549 log 15608 16180 Internal Server Error: /trace/
+Traceback (most recent call last):
+  File "D:\Program Files\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Program Files\Python37\lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_response(request, response)
+  File "D:\Program Files\Python37\lib\site-packages\django\middleware\clickjacking.py", line 26, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+ERROR 2022-04-12 18:32:23,553 basehttp 15608 16180 "GET /trace/ HTTP/1.1" 500 69931
+INFO 2022-04-12 18:32:50,922 autoreload 15608 17128 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:32:51,767 autoreload 8916 8472 Watching for file changes with StatReloader
+INFO 2022-04-12 18:32:54,120 autoreload 8916 8472 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:32:55,094 autoreload 18080 20400 Watching for file changes with StatReloader
+INFO 2022-04-12 18:32:56,474 basehttp 18080 19064 "GET /trace/ HTTP/1.1" 200 8
+INFO 2022-04-12 18:38:31,598 autoreload 18080 20400 D:\Program Files\Python37\Lib\site-packages\django_opentracing\tracing.py changed, reloading.
+INFO 2022-04-12 18:38:32,568 autoreload 20432 12236 Watching for file changes with StatReloader
+INFO 2022-04-12 18:38:52,127 autoreload 20432 12236 D:\Program Files\Python37\Lib\site-packages\django_opentracing\tracing.py changed, reloading.
+INFO 2022-04-12 18:38:53,234 autoreload 17080 16064 Watching for file changes with StatReloader
+INFO 2022-04-12 18:39:06,580 autoreload 17080 16064 D:\Program Files\Python37\Lib\site-packages\django_opentracing\tracing.py changed, reloading.
+INFO 2022-04-12 18:39:07,608 autoreload 13632 2624 Watching for file changes with StatReloader
+INFO 2022-04-12 18:39:37,762 basehttp 13632 21488 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:40:38,068 basehttp 13632 21488 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:41:20,822 basehttp 13632 21488 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:41:29,392 autoreload 13932 15576 Watching for file changes with StatReloader
+INFO 2022-04-12 18:41:33,323 basehttp 13932 15444 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:42:26,086 basehttp 13932 15444 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:43:42,194 autoreload 13932 15576 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:43:43,159 autoreload 12848 15920 Watching for file changes with StatReloader
+INFO 2022-04-12 18:43:49,017 basehttp 12848 19652 "GET /totals/ HTTP/1.1" 200 54
+INFO 2022-04-12 18:44:21,135 autoreload 12848 15920 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:44:21,914 autoreload 16872 3540 Watching for file changes with StatReloader
+INFO 2022-04-12 18:44:23,562 autoreload 16872 3540 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:44:24,342 autoreload 18324 15896 Watching for file changes with StatReloader
+INFO 2022-04-12 18:44:26,010 autoreload 18324 15896 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:44:26,832 autoreload 17540 2884 Watching for file changes with StatReloader
+INFO 2022-04-12 18:44:33,686 autoreload 17540 2884 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:44:34,527 autoreload 19472 20428 Watching for file changes with StatReloader
+INFO 2022-04-12 18:44:41,302 basehttp 19472 15608 "GET /totals/ HTTP/1.1" 200 51
+INFO 2022-04-12 18:44:56,654 autoreload 19472 20428 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:44:57,627 autoreload 19308 19792 Watching for file changes with StatReloader
+INFO 2022-04-12 18:45:02,097 basehttp 19308 19892 "GET /totals/ HTTP/1.1" 200 51
+INFO 2022-04-12 18:45:14,438 autoreload 19308 19792 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:45:15,221 autoreload 20736 16068 Watching for file changes with StatReloader
+INFO 2022-04-12 18:46:01,045 basehttp 20736 14184 "GET /totals/ HTTP/1.1" 200 51
+INFO 2022-04-12 18:46:38,492 autoreload 20736 16068 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:46:39,299 autoreload 19368 3920 Watching for file changes with StatReloader
+INFO 2022-04-12 18:46:42,015 autoreload 19368 3920 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:46:42,827 autoreload 20640 19556 Watching for file changes with StatReloader
+INFO 2022-04-12 18:47:06,673 autoreload 20640 19556 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:47:07,506 autoreload 6740 16740 Watching for file changes with StatReloader
+INFO 2022-04-12 18:47:15,466 autoreload 6740 16740 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:47:16,273 autoreload 16048 17656 Watching for file changes with StatReloader
+INFO 2022-04-12 18:47:17,939 autoreload 16048 17656 D:\Work\Code\microservice\microservice\microservice\views.py changed, reloading.
+INFO 2022-04-12 18:47:18,765 autoreload 4244 19652 Watching for file changes with StatReloader

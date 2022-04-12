@@ -1,0 +1,338 @@
+INFO 2022-04-12 15:15:33,932 autoreload 17400 10144 Watching for file changes with StatReloader
+WARNING 2022-04-12 15:15:37,841 log 17400 18044 Not Found: /
+WARNING 2022-04-12 15:15:37,842 basehttp 17400 18044 "GET / HTTP/1.1" 404 2164
+WARNING 2022-04-12 15:15:38,012 log 17400 18044 Not Found: /favicon.ico
+WARNING 2022-04-12 15:15:38,013 basehttp 17400 18044 "GET /favicon.ico HTTP/1.1" 404 2215
+INFO 2022-04-12 15:15:41,719 basehttp 17400 18044 "GET /goods HTTP/1.1" 301 0
+INFO 2022-04-12 15:15:41,723 basehttp 17400 18044 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 15:15:43,045 basehttp 17400 18044 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 15:15:44,787 basehttp 17400 18044 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 15:16:04,546 basehttp 17400 18044 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 15:20:42,013 basehttp 17400 18044 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 15:20:44,451 basehttp 17400 18044 "GET /goods/ HTTP/1.1" 200 11
+WARNING 2022-04-12 17:30:54,763 log 17400 8256 Not Found: /
+WARNING 2022-04-12 17:30:54,764 basehttp 17400 8256 "GET / HTTP/1.1" 404 2164
+ERROR 2022-04-12 17:30:59,783 log 17400 8256 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:30:59,784 basehttp 17400 8256 "GET /goods/ HTTP/1.1" 500 64086
+WARNING 2022-04-12 17:31:16,336 log 17400 8256 Not Found: /totals/
+WARNING 2022-04-12 17:31:16,337 basehttp 17400 8256 "GET /totals/ HTTP/1.1" 404 2203
+INFO 2022-04-12 17:35:33,812 autoreload 20168 18776 Watching for file changes with StatReloader
+WARNING 2022-04-12 17:35:35,994 log 17400 8256 Not Found: /
+WARNING 2022-04-12 17:35:35,995 basehttp 17400 8256 "GET / HTTP/1.1" 404 2164
+ERROR 2022-04-12 17:35:38,859 log 17400 8256 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:35:38,860 basehttp 17400 8256 "GET /goods/ HTTP/1.1" 500 64086
+ERROR 2022-04-12 17:37:14,525 log 17400 10680 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:37:14,526 basehttp 17400 10680 "GET /goods/ HTTP/1.1" 500 62651
+ERROR 2022-04-12 17:37:39,133 log 17400 19876 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:37:39,134 basehttp 17400 19876 "GET /goods/ HTTP/1.1" 500 62651
+ERROR 2022-04-12 17:38:29,806 log 17400 14784 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:38:29,807 basehttp 17400 14784 "GET /goods/ HTTP/1.1" 500 62651
+ERROR 2022-04-12 17:38:35,085 log 17400 21480 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:38:35,086 basehttp 17400 21480 "GET /goods/ HTTP/1.1" 500 62651
+ERROR 2022-04-12 17:38:57,694 log 17400 14924 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:38:57,695 basehttp 17400 14924 "GET /goods/ HTTP/1.1" 500 62651
+ERROR 2022-04-12 17:39:28,245 log 17400 11196 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:39:28,246 basehttp 17400 11196 "GET /goods/ HTTP/1.1" 500 62650
+ERROR 2022-04-12 17:39:45,993 log 17400 7736 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:39:45,994 basehttp 17400 7736 "GET /goods/ HTTP/1.1" 500 62651
+ERROR 2022-04-12 17:40:16,470 log 17400 17780 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:40:16,471 basehttp 17400 17780 "GET /goods/ HTTP/1.1" 500 62651
+ERROR 2022-04-12 17:41:14,325 log 17400 18560 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:41:14,328 basehttp 17400 18560 "GET /goods/ HTTP/1.1" 500 64086
+WARNING 2022-04-12 17:41:16,156 log 17400 18560 Not Found: /
+WARNING 2022-04-12 17:41:16,157 basehttp 17400 18560 "GET / HTTP/1.1" 404 2164
+ERROR 2022-04-12 17:41:19,157 log 17400 18560 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:41:19,158 basehttp 17400 18560 "GET /goods/ HTTP/1.1" 500 64086
+INFO 2022-04-12 17:42:20,526 autoreload 5764 14684 Watching for file changes with StatReloader
+ERROR 2022-04-12 17:42:22,341 log 17400 18560 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:42:22,342 basehttp 17400 18560 "GET /goods/ HTTP/1.1" 500 64223
+ERROR 2022-04-12 17:42:25,733 log 17400 18560 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:42:25,734 basehttp 17400 18560 "GET /goods/ HTTP/1.1" 500 64223
+ERROR 2022-04-12 17:42:27,049 log 17400 18560 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:42:27,050 basehttp 17400 18560 "GET /goods/ HTTP/1.1" 500 64223
+WARNING 2022-04-12 17:42:30,865 log 17400 18560 Not Found: /
+WARNING 2022-04-12 17:42:30,866 basehttp 17400 18560 "GET / HTTP/1.1" 404 2164
+ERROR 2022-04-12 17:42:33,999 log 17400 18560 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:42:34,000 basehttp 17400 18560 "GET /goods/ HTTP/1.1" 500 64216
+WARNING 2022-04-12 17:42:57,880 log 17400 18560 Not Found: /
+WARNING 2022-04-12 17:42:57,881 basehttp 17400 18560 "GET / HTTP/1.1" 404 2164
+ERROR 2022-04-12 17:43:00,795 log 17400 18560 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\workpace\microservice\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Work\Code\microservice\goods\goods\views.py", line 13, in goods_index
+    print("goods_index")
+OSError: [Errno 22] Invalid argument
+ERROR 2022-04-12 17:43:00,798 basehttp 17400 18560 "GET /goods/ HTTP/1.1" 500 64086
+INFO 2022-04-12 17:43:42,378 autoreload 17400 10144 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 17:43:42,581 autoreload 5764 14684 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 17:43:43,499 autoreload 20780 16572 Watching for file changes with StatReloader
+INFO 2022-04-12 17:43:43,623 autoreload 20996 18880 Watching for file changes with StatReloader
+INFO 2022-04-12 17:43:45,237 basehttp 20780 19420 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:43:46,271 basehttp 20780 19420 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:43:51,302 autoreload 20780 16572 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 17:43:52,074 autoreload 2484 19332 Watching for file changes with StatReloader
+INFO 2022-04-12 17:43:52,186 autoreload 20996 18880 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 17:43:53,088 autoreload 21200 8768 Watching for file changes with StatReloader
+INFO 2022-04-12 17:44:01,818 autoreload 2484 19332 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 17:44:02,660 autoreload 21200 8768 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 17:44:02,759 autoreload 10432 20620 Watching for file changes with StatReloader
+INFO 2022-04-12 17:44:02,919 basehttp 10432 10496 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:44:03,600 autoreload 14728 20612 Watching for file changes with StatReloader
+INFO 2022-04-12 17:44:04,006 basehttp 10432 10496 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:44:06,290 basehttp 10432 10496 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:44:13,843 basehttp 10432 20180 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:44:43,683 basehttp 10432 7108 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:45:03,116 basehttp 10432 19980 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:47:14,452 basehttp 10432 10496 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:47:17,882 basehttp 10432 3064 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:48:09,391 basehttp 10432 20060 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:48:56,655 basehttp 10432 13328 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:50:05,417 autoreload 10432 20620 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 17:50:05,733 autoreload 14728 20612 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 17:50:06,212 autoreload 19812 10856 Watching for file changes with StatReloader
+INFO 2022-04-12 17:50:06,696 autoreload 5428 3880 Watching for file changes with StatReloader
+INFO 2022-04-12 17:50:09,663 autoreload 19812 10856 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 17:50:10,022 autoreload 5428 3880 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 17:50:10,480 autoreload 15608 13824 Watching for file changes with StatReloader
+INFO 2022-04-12 17:50:10,984 autoreload 21452 15120 Watching for file changes with StatReloader
+INFO 2022-04-12 17:50:12,201 autoreload 21452 15120 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 17:50:12,881 autoreload 15608 13824 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 17:50:13,143 autoreload 1612 17772 Watching for file changes with StatReloader
+INFO 2022-04-12 17:50:13,665 autoreload 17536 16748 Watching for file changes with StatReloader
+INFO 2022-04-12 17:50:23,108 basehttp 17536 20552 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:50:43,006 basehttp 17536 20404 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:51:33,667 autoreload 17536 16748 D:\Work\Code\microservice\goods\goods\settings.py changed, reloading.
+INFO 2022-04-12 17:51:33,860 autoreload 1612 17772 D:\Work\Code\microservice\goods\goods\settings.py changed, reloading.
+INFO 2022-04-12 17:51:34,508 autoreload 14628 15452 Watching for file changes with StatReloader
+INFO 2022-04-12 17:51:34,894 autoreload 18996 8404 Watching for file changes with StatReloader
+INFO 2022-04-12 17:53:46,143 basehttp 14628 17576 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:54:10,673 autoreload 17832 16388 Watching for file changes with StatReloader
+INFO 2022-04-12 17:55:04,276 basehttp 17832 148 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 17:59:32,097 basehttp 17832 16856 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 18:00:34,546 autoreload 18996 8404 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:00:34,770 autoreload 17832 16388 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:00:35,543 autoreload 16260 17084 Watching for file changes with StatReloader
+INFO 2022-04-12 18:00:35,634 autoreload 1612 21384 Watching for file changes with StatReloader
+INFO 2022-04-12 18:00:49,276 autoreload 16260 17084 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:00:49,509 autoreload 1612 21384 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:00:50,331 autoreload 20904 19732 Watching for file changes with StatReloader
+INFO 2022-04-12 18:00:50,465 autoreload 19832 2452 Watching for file changes with StatReloader
+INFO 2022-04-12 18:04:11,967 autoreload 19832 2452 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:04:12,357 autoreload 20904 19732 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:04:12,984 autoreload 8012 18796 Watching for file changes with StatReloader
+INFO 2022-04-12 18:04:13,491 autoreload 19124 15348 Watching for file changes with StatReloader
+INFO 2022-04-12 18:04:28,301 autoreload 19124 15348 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:04:28,944 autoreload 8012 18796 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:04:29,224 autoreload 9784 2308 Watching for file changes with StatReloader
+INFO 2022-04-12 18:04:29,746 autoreload 18080 21088 Watching for file changes with StatReloader
+INFO 2022-04-12 18:07:26,735 autoreload 18080 21088 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:07:27,081 autoreload 9784 2308 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:07:27,697 autoreload 17316 21012 Watching for file changes with StatReloader
+INFO 2022-04-12 18:07:28,215 autoreload 20684 9712 Watching for file changes with StatReloader
+INFO 2022-04-12 18:07:53,137 autoreload 17316 21012 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:07:53,570 autoreload 20684 9712 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:07:53,952 autoreload 20132 19988 Watching for file changes with StatReloader
+INFO 2022-04-12 18:07:54,619 autoreload 15896 10432 Watching for file changes with StatReloader
+INFO 2022-04-12 18:08:42,928 autoreload 15896 10432 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:08:43,408 autoreload 20132 19988 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:08:43,949 autoreload 18176 20412 Watching for file changes with StatReloader
+INFO 2022-04-12 18:08:44,295 autoreload 19444 21464 Watching for file changes with StatReloader
+INFO 2022-04-12 18:08:48,461 basehttp 19444 18776 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 18:09:34,668 basehttp 19444 19892 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 18:09:44,914 basehttp 19444 5032 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 18:09:54,286 basehttp 19444 19832 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 18:11:29,243 basehttp 19444 21196 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 18:13:51,742 autoreload 18176 20412 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:13:52,300 autoreload 19444 21464 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:13:52,691 autoreload 15928 16000 Watching for file changes with StatReloader
+INFO 2022-04-12 18:13:53,099 autoreload 18992 17136 Watching for file changes with StatReloader
+INFO 2022-04-12 18:13:53,881 autoreload 15928 16000 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:13:54,474 autoreload 18992 17136 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:13:54,992 autoreload 14684 20600 Watching for file changes with StatReloader
+INFO 2022-04-12 18:13:55,365 autoreload 14464 18584 Watching for file changes with StatReloader
+INFO 2022-04-12 18:13:59,100 basehttp 14464 19800 "GET /goods/ HTTP/1.1" 200 11
+INFO 2022-04-12 18:15:29,975 autoreload 14464 18584 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:15:30,441 autoreload 14684 20600 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:15:30,797 autoreload 20884 16904 Watching for file changes with StatReloader
+INFO 2022-04-12 18:15:31,397 autoreload 21380 19500 Watching for file changes with StatReloader
+INFO 2022-04-12 18:15:33,208 autoreload 20884 16904 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:15:33,623 autoreload 21380 19500 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:15:34,032 autoreload 7016 21460 Watching for file changes with StatReloader
+INFO 2022-04-12 18:15:34,555 autoreload 5836 17588 Watching for file changes with StatReloader
+INFO 2022-04-12 18:15:40,964 autoreload 5836 17588 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:15:41,677 autoreload 7016 21460 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:15:41,899 autoreload 17224 21464 Watching for file changes with StatReloader
+INFO 2022-04-12 18:15:42,457 autoreload 18304 19124 Watching for file changes with StatReloader
+INFO 2022-04-12 18:15:56,777 autoreload 17224 21464 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:15:57,328 autoreload 18304 19124 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:15:57,744 autoreload 14828 14628 Watching for file changes with StatReloader
+INFO 2022-04-12 18:15:58,153 autoreload 21144 16732 Watching for file changes with StatReloader
+INFO 2022-04-12 18:15:58,978 autoreload 14828 14628 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:15:59,917 autoreload 18136 21372 Watching for file changes with StatReloader
+INFO 2022-04-12 18:16:05,528 basehttp 21144 19884 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:16:24,105 basehttp 21144 19188 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:20:24,815 basehttp 21144 15120 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:31:25,621 basehttp 21144 21484 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:38:31,530 autoreload 21144 16732 D:\Program Files\Python37\Lib\site-packages\django_opentracing\tracing.py changed, reloading.
+INFO 2022-04-12 18:38:32,488 autoreload 21296 15652 Watching for file changes with StatReloader
+INFO 2022-04-12 18:38:51,724 autoreload 21296 15652 D:\Program Files\Python37\Lib\site-packages\django_opentracing\tracing.py changed, reloading.
+INFO 2022-04-12 18:38:52,622 autoreload 20000 20092 Watching for file changes with StatReloader
+INFO 2022-04-12 18:39:06,590 autoreload 20000 20092 D:\Program Files\Python37\Lib\site-packages\django_opentracing\tracing.py changed, reloading.
+INFO 2022-04-12 18:39:07,597 autoreload 896 16276 Watching for file changes with StatReloader
+INFO 2022-04-12 18:39:37,729 basehttp 896 1356 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:40:27,458 autoreload 896 16276 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:40:27,582 autoreload 18136 21372 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:40:28,342 autoreload 19884 19564 Watching for file changes with StatReloader
+INFO 2022-04-12 18:40:28,596 autoreload 16068 16048 Watching for file changes with StatReloader
+INFO 2022-04-12 18:40:32,828 autoreload 19884 19564 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:40:32,943 autoreload 16068 16048 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:40:33,883 autoreload 1612 20400 Watching for file changes with StatReloader
+INFO 2022-04-12 18:40:34,202 autoreload 14276 12436 Watching for file changes with StatReloader
+INFO 2022-04-12 18:40:38,057 basehttp 1612 16660 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:41:14,043 autoreload 14276 12436 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:41:14,072 autoreload 1612 20400 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:41:14,920 autoreload 388 19676 Watching for file changes with StatReloader
+INFO 2022-04-12 18:41:15,021 autoreload 19940 14932 Watching for file changes with StatReloader
+INFO 2022-04-12 18:41:16,220 autoreload 19940 14932 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:41:16,242 autoreload 388 19676 D:\Work\Code\microservice\goods\goods\views.py changed, reloading.
+INFO 2022-04-12 18:41:17,086 autoreload 10992 18760 Watching for file changes with StatReloader
+INFO 2022-04-12 18:41:17,222 autoreload 21424 15084 Watching for file changes with StatReloader
+INFO 2022-04-12 18:41:20,771 basehttp 10992 13932 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:41:33,310 basehttp 10992 16772 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:42:02,498 basehttp 10992 18524 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:42:26,067 basehttp 10992 19512 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:43:48,997 basehttp 10992 15884 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:44:41,267 basehttp 10992 20736 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:45:02,061 basehttp 10992 20000 "GET /goods/ HTTP/1.1" 200 7
+INFO 2022-04-12 18:46:00,984 basehttp 10992 6436 "GET /goods/ HTTP/1.1" 200 7

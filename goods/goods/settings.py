@@ -174,7 +174,7 @@ config = Config(
         },
         'logging': True,
     },
-    service_name='goods-tracer',
+    service_name='goods-project-tracer',
     validate=True,
 )
 # this call also sets opentracing.tracer
