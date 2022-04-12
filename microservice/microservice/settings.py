@@ -85,8 +85,6 @@ DATABASES = {
         'HOST': '192.168.21.101',
         'PORT': 3306,
         'NAME': 'microservice',
-        'TEST': {
-            'NAME': 'microservice',
         },
 }
 
