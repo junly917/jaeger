@@ -1,7 +1,7 @@
 import json
 import os
 import time
-from cv2 import trace
+# from cv2 import trace
 
 from django import http
 import requests
