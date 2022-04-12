@@ -26,7 +26,7 @@ def total(request):
 #@tracing.trace()
 #@tracing.trace(view=False)
 def call_order(Hostname):
-    order_url = "http://{}:8001/order/".format(Hostname)
+    order_url = "http://{}:8080/order/".format(Hostname)
     print("call_order")
     time.sleep(3)
     tracer = opentracing.global_tracer()
