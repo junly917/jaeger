@@ -12,7 +12,6 @@ def order_index(request):
 
 def order(a, b):
     print("order views order")
-    time.sleep(1.3)
     return "{}".format(a+b)
 
 

@@ -20,27 +20,30 @@ tracing = settings.OPENTRACING_TRACING
 #@tracing.trace(view=False)
 def total(request):
     hostname = request.get_host().split(":")[0]
+    #return HttpResponse("total order_info: {}".format(hostname)) 
     return HttpResponse("{} {} order_info: {}".format("total", call_goods(hostname), call_order(hostname)))
 
 
 #@tracing.trace()
 #@tracing.trace(view=False)
 def call_order(Hostname):
-    order_url = "http://ORDER_SERVICE_HOST:ORDER_SERVICE_PORT/order/"
-    print("call_order")
-    time.sleep(3)
-    tracer = opentracing.global_tracer()
-    span = tracer.active_span
-    headers = {}
-    tracer.inject(span, Format.HTTP_HEADERS, headers)
-    res = requests.get(order_url, headers=headers, timeout=3.0)
-    return res.text
+    with tracer.start_span('call_order', child_of=get_current_span()) as span:
+        with span_in_context(span):
+          order_url = "http://{}:{}/order/".format(os.getenv('ORDER_SERVICE_HOST'), os.getenv('ORDER_SERVICE_PORT'))
+          print("call_order")
+          time.sleep(3)
+          tracer = opentracing.global_tracer()
+          span = tracer.active_span
+          headers = {}
+          tracer.inject(span, Format.HTTP_HEADERS, headers)
+          res = requests.get(order_url, headers=headers, timeout=3.0)
+          return res.text
 
 
 #@tracing.trace()
 #@tracing.trace(view=False)
 def call_goods(Hostname):
-    order_url = "http://GOODS_SERVICE_HOST:GOODS_SERVICE_PORT/goods/"
+    order_url = "http://{}:{}/goods/".format(os.getenv('GOODS_SERVICE_HOST'), os.getenv('GOODS_SERVICE_PORT'))
     headers = {}
     print("call_goods")
     time.sleep(2)

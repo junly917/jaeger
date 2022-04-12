@@ -1,4 +1,4 @@
-FROM cr.speakin.mobi/baseimg/python:3.7
+FROM microservice:v0.1
 
 WORKDIR /src
 
