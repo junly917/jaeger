@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: order
+    version: v1.0
+  name: order
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: order
+      version: v1.0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: order
+        version: v1.0
+    spec:
+      containers:
+      - image: order:v1.0
+        name: order
+        resources: {}
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: order
+  name: order
+spec:
+  ports:
+  - name: "8080"
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: order
+  type: ClusterIP
+status:
+  loadBalancer: {}
